@@ -4,6 +4,68 @@ body {
     padding: 0;
     background-color: #007bff; /* Cambio de color de fondo para toda la página */
 }
+:root {
+    --primary-color: #36506b; /* Cambia esto al color primario deseado */
+    --secondary-color: #f0eeee; /* Cambia esto al color secundario deseado */
+    --bg-input-color: #adb2b6; /* Cambia esto al color de fondo deseado */
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 1.5vh 0; /* Ajuste del espaciado superior e inferior */
+    height: 6vh; /* Ajuste de la altura */
+  }
+  
+  .link-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Ajuste del espacio entre elementos */
+  }
+  
+  .link-whatsapp img {
+    vertical-align: middle;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 1rem; /* Ajuste del margen izquierdo */
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 2rem; /* Ajuste del margen derecho */
+  }
+  
+  nav ul li a,
+  nav > a {
+    display: block;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem; /* Ajuste del relleno */
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--bg-input-color);
+  }
+  
 
 .container {
     max-width: 600px;

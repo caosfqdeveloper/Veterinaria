@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #007bff; /* Cambio de color de fondo para toda la página */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Mantenemos el fondo azul para el div container */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el div "negro" */
+.negro {
+    text-align: center;
+    background-color: rgb(26, 22, 22); /* Cambio de color de fondo para el div "negro" */
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto; /* Centrar el div */
+    max-width: 400px; /* Limitar el ancho del div */
+}
+
+.negro h1 {
+    margin-top: 0;
+}
+
+.negro h3,
+.negro h4 {
+    margin-bottom: 5px;
+}
+
+/* Estilos para el div "whatsapp" */
+.whatsapp {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    text-decoration: none; /* Cambio de estilos de enlace */
+    color: #0df053; /* Cambio de color de texto */
+    background: #fff; /* Cambio de color de fondo */
+}

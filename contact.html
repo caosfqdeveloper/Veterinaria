@@ -12,61 +12,67 @@
     <header>
         <!-- Barra de navegación --> 
         <nav>
-            <a href="#" target="_blank" class="link-whatsapp">
-                <img src="/img/whatsapp.png" width="30px" alt="whatsApp">
+            <a href="./index.html"><img src="img/1.jpg" alt="Logo de Veterinaria Pastor"></a>
+
                 <span>Veterinaria Pastor</span>
             </a> <!-- Enlace al inicio -->
             <ul>
-                <li><a href="./index.html">Home</a></li> <!-- Enlace a la página de inicio -->
-                <li><a href="./About.html">About</a></li> <!-- Enlace a la página "Acerca de" -->
-                <li><a href="">Services</a></li> <!-- Enlace a la página de servicios -->
-                <li><a href="./contact.html">Contact</a></li> <!-- Enlace a la página de contacto -->
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <h1>Contacto</h1>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Nombre y Apellido:</label>
-            <input type="text" id="name" name="name" required>
+    <main>
+        
+        <div class="container">
+            <h1>Contacto</h1>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <div class="whatsapp">
+        <a href="https://wa.me/1535912924" class="btn-wsp"><i class="fab fa-whatsapp"></i></a>
     </div>
+    
+    
 
-    <!-- footer-->
     <footer>
+        <!--ondulaciones -->
         <div class="waves">
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
-            
         </div>
+        <!--iconos de redes sociales-->
         <ul class="social_icon">
-            <li><a href="#">
-            </a>
-            </li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
         </ul>
-
+        <!-- fin de la pagina-->
         <ul class="menu">
-            <li><a href="#">ayuda</a></li>
-            <li><a href="#">ayuda</a></li>
-            <li><a href="#">ayuda</a></li>
-            <li><a href="#">ayuda</a></li>
-            <li><a href="#">ayuda</a></li>
-            <li><a href="#">ayuda</a></li>
-
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Sucursales</a></li>
+            <li><a href="#">Proveedores</a></li>
+            <li><a href="#">Franquicia</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
-        <p>@2024 Veterinaria |All Rights</p>
-
+        <p>@2024 Veterinaria | All Rights Reserved</p>
     </footer>
 </body>
 </html>

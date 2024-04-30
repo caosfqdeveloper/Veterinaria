@@ -15,17 +15,9 @@ body {
     padding: 1.5vh 0; /* Ajuste del espaciado superior e inferior */
     height: 6vh; /* Ajuste de la altura */
   }
-  
-  .link-whatsapp {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem; /* Ajuste del espacio entre elementos */
+  header img{
+    width: 50px;/*tamaño deseado*/
   }
-  
-  .link-whatsapp img {
-    vertical-align: middle;
-  }
-  
   nav {
     display: flex;
     justify-content: space-between;
@@ -67,9 +59,22 @@ body {
   }
   
 
+
+  main {
+    background-image: url('1.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen de fondo */
+    position: relative; /* Establecer posición relativa para poder posicionar el .container */
+    height: 100vh; /* Altura del main, ajusta según tus necesidades */
+}
+
 .container {
+    position: absolute; /* Establecer posición absoluta para posicionar el .container */
+    top: 50%; /* Alinear el .container a la mitad del main verticalmente */
+    left: 50%; /* Alinear el .container a la mitad del main horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el .container */
     max-width: 600px;
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -114,49 +119,73 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Estilos para el div "negro" */
-.negro {
+
+h1 {
     text-align: center;
-    background-color: rgb(26, 22, 22); /* Cambio de color de fondo para el div "negro" */
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 50px auto; /* Centrar el div */
-    max-width: 400px; /* Limitar el ancho del div */
 }
 
-.negro h1 {
-    margin-top: 0;
-}
-
-.negro h3,
-.negro h4 {
-    margin-bottom: 5px;
-}
-
-/* Estilos para el div "whatsapp" */
-.whatsapp {
+form {
     margin-top: 20px;
-    text-align: center;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* -------------Estilos para el div "whatsapp"-------------- */
+.whatsapp {
+  position: fixed;
+ bottom: 30px;
+ right: 30px;
+ z-index: 1000
+
 }
 
 .btn-wsp {
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
-    text-decoration: none; /* Cambio de estilos de enlace */
-    color: #0df053; /* Cambio de color de texto */
-    background: #fff; /* Cambio de color de fondo */
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px; /* Ajusta este valor según tu preferencia */
+  bottom: 30px;
+  right: 30px;
+  background: #25d366; /* Color de fondo del botón de WhatsApp */
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); /* Ajusta el valor de la sombra según tu preferencia */
+  text-decoration: none; /* Cambio de estilos de enlace */
 }
+
+.btn-wsp:hover {
+  background: #0df053; /* Cambia el color de fondo al pasar el cursor */
+}
+
 /*---------------pie de pagina-------------------*/
 footer{
   position: relative;
@@ -260,3 +289,5 @@ footer .wave#wave4 {
     background-position-x: 1000px;
   }
 }
+
+

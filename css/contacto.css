@@ -1,160 +1,129 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #007bff; /* Cambio de color de fondo para toda la página */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff; /* Cambio de color de fondo para toda la página */
 }
+
 :root {
-    --primary-color: #36506b; /* Cambia esto al color primario deseado */
-    --secondary-color: #f0eeee; /* Cambia esto al color secundario deseado */
-    --bg-input-color: #adb2b6; /* Cambia esto al color de fondo deseado */
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    padding: 1.5vh 0; /* Ajuste del espaciado superior e inferior */
-    height: 6vh; /* Ajuste de la altura */
-  }
-  header img{
-    width: 50px;/*tamaño deseado*/
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 1rem; /* Ajuste del margen izquierdo */
-  }
-  
-  nav ul li:first-child {
-    margin-left: 0;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 2rem; /* Ajuste del margen derecho */
-  }
-  
-  nav ul li a,
-  nav > a {
-    display: block;
-    border-radius: 5px;
-    padding: 0.6rem 1.2rem; /* Ajuste del relleno */
-    text-decoration: none;
-    color: var(--secondary-color);
-    transition: background-color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background-color: var(--bg-input-color);
-  }
-  
+  --primary-color: #264363; /* Cambia esto al color primario deseado */
+  --secondary-color: #f3e2e2; /* Cambia esto al color secundario deseado */
+  --bg-input-color: #5a52a1; /* Cambia esto al color de fondo deseado */
+}
 
+header {
+  background-color: var(--primary-color);
+  padding: 1.5vh 0; /* Ajuste del espaciado superior e inferior */
+  height: 6vh; /* Ajuste de la altura */
+}
 
-  main {
-    background-image: url('1.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centrar la imagen de fondo */
-    position: relative; /* Establecer posición relativa para poder posicionar el .container */
-    height: 100vh; /* Altura del main, ajusta según tus necesidades */
+header img {
+  width: 50px; /* tamaño deseado */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 1rem; /* Ajuste del margen izquierdo */
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 2rem; /* Ajuste del margen derecho */
+}
+
+nav ul li a,
+nav > a {
+  display: block;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem; /* Ajuste del relleno */
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--bg-input-color);
+}
+
+main {
+  position: relative; /* Asegura que el main tenga posición relativa */
+}
+
+.imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Asegura que la imagen esté detrás del contenido */
 }
 
 .container {
-    position: absolute; /* Establecer posición absoluta para posicionar el .container */
-    top: 50%; /* Alinear el .container a la mitad del main verticalmente */
-    left: 50%; /* Alinear el .container a la mitad del main horizontalmente */
-    transform: translate(-50%, -50%); /* Centrar el .container */
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Mantenemos el fondo azul para el div container */
+  position: relative; /* Asegura que el contenedor esté posicionado */
+  z-index: 2; /* Asegura que el contenido esté delante de la imagen */
+  opacity: 0.5;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Mantenemos el fondo azul para el div container */
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 label,
 input,
 textarea,
 button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input,
 textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: #61758a;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
-}
-
-
-h1 {
-    text-align: center;
-}
-
-form {
-    margin-top: 20px;
-}
-
-label,
-input,
-textarea,
-button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-input,
-textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+  background-color: #dee4eb;
 }
 
 /* -------------Estilos para el div "whatsapp"-------------- */
@@ -286,8 +255,21 @@ footer .wave#wave4 {
     background-position-x: 0px;
   }
   100% {
-    background-position-x: 1000px;
+    background-position-x: 600px;
+  }
+}
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+  .container {
+      max-width: 90%;
+  }
+  h1 {
+      font-size: 24px;
   }
 }
 
-
+@media only screen and (max-width: 480px) {
+  h1 {
+      font-size: 18px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+  }
+}

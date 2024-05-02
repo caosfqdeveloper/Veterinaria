@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #007bff; /* Cambio de color de fondo para toda la página */
+  background-color: #bbc2ca; /* Cambio de color de fondo para toda la página */
 }
 
 :root {
-  --primary-color: #264363; /* Cambia esto al color primario deseado */
+  --primary-color: #1c4d81; /* Cambia esto al color primario deseado */
   --secondary-color: #f3e2e2; /* Cambia esto al color secundario deseado */
-  --bg-input-color: #5a52a1; /* Cambia esto al color de fondo deseado */
+  --bg-input-color: #dedde7; /* Cambia esto al color de fondo deseado */
 }
 
 header {
@@ -115,7 +115,7 @@ textarea {
 
 button {
   padding: 10px;
-  background-color: #61758a;
+  background-color: #3e6ea1;
   color: #fff;
   border-radius: 10px;
   border: none;
@@ -207,57 +207,7 @@ footer p{
   margin-bottom:10px ;
   font-size: 1.1em;
 }
-footer .wave{
-  position:absolute ;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(img/wave.png);
-  background-size: 1000px 100px;
-}
-footer .wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWave 4s linear infinite;
-}
-footer .wave#wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: animateWave_02 4s linear infinite;
-}
-footer .wave#wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  bottom: 10px;
-  animation: animateWave 3s linear infinite;
-}
-footer .wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: animateWave_02 3s linear infinite;
-}
 
-@keyframes animateWave {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-position-x: 0px;
-  }
-}
-
-@keyframes animateWave_02 {
-  0% {
-    background-position-x: 0px;
-  }
-  100% {
-    background-position-x: 600px;
-  }
-}
 /* Estilos responsivos */
 @media only screen and (max-width: 768px) {
   .container {

@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #36506b; /* Cambia esto al color primario deseado */
+    --secondary-color: #f0eeee; /* Cambia esto al color secundario deseado */
+    --bg-input-color: #adb2b6; /* Cambia esto al color de fondo deseado */
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 1.5vh 0; /* Ajuste del espaciado superior e inferior */
+    height: 6vh; /* Ajuste de la altura */
+  }
+  
+  .link-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Ajuste del espacio entre elementos */
+  }
+  
+  .link-whatsapp img {
+    vertical-align: middle;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 1rem; /* Ajuste del margen izquierdo */
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 2rem; /* Ajuste del margen derecho */
+  }
+  
+  nav ul li a,
+  nav > a {
+    display: block;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem; /* Ajuste del relleno */
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--bg-input-color);
+  }
+  
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Mantenemos el fondo azul para el div container */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el div "negro" */
+.negro {
+    text-align: center;
+    background-color: rgb(26, 22, 22); /* Cambio de color de fondo para el div "negro" */
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto; /* Centrar el div */
+    max-width: 400px; /* Limitar el ancho del div */
+}
+
+.negro h1 {
+    margin-top: 0;
+}
+
+.negro h3,
+.negro h4 {
+    margin-bottom: 5px;
+}
+
+/* Estilos para el div "whatsapp" */
+.whatsapp {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    text-decoration: none; /* Cambio de estilos de enlace */
+    color: #0df053; /* Cambio de color de texto */
+    background: #fff; /* Cambio de color de fondo */
+}
+
+.banner{
+  /*propiedades geometricas del banner*/
+  height: 100vh;/*ajustamos la altura del banner al viewport*/
+  position: relative;
+  overflow: hidden;/*oculta la barra horizontal de desplazamiento o scrollbar horizontal*/
+  display: flex;
+}
+.imagen_principal{
+  /*propiedades geometricas de imagen de fondo*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*dimensiones*/
+  width: 100vw;
+  height: 100vh;
+  object-fit:cover;
+  z-index:-1;
+  /*controlamos el ajuste del tamaño de fondo
+  fill(estira), contain (no distorsiona), cover(acerca y cubre), none,
+  */
+  filter: blur(1px); /* ajusta el valor de píxeles */
+  
+}

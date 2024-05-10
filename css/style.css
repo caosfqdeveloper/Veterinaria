@@ -40,6 +40,7 @@ nav {
   align-items: center;
 }
 
+
 nav ul {
   list-style-type: none;
   text-align: right;
@@ -68,13 +69,11 @@ nav ul li a, nav > a {
   transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-  background-color: var(--bg-input-color);
-}
+
 
 /* Estilos para el contenido principal */
 main {
-  height: 85vh;
+  height: 80vh;
 }
 
 /* Estilos para el pie de página */
@@ -93,8 +92,12 @@ footer {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  max-width: 100%; /* Establece el tamaño máximo igual al ancho de la ventana */
+  max-height: 100%; /* Establece el tamaño máximo igual al alto de la ventana */
   z-index: -1;
 }
+
+
 
 /* Estilos para los títulos */
 h1, h2 {
@@ -108,12 +111,47 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size:2.8rem;
 }
 
 .texto {
   color: var(--secondary-color);
 }
+
+@media screen and (max-width: 980px) {
+  nav ul li a {
+    display: none;
+  }
+
+  .hamburguesa {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburguesa img {
+    margin-right: auto; /* Ajusta el margen derecho del icono de hamburguesa */
+   
+  }
+  h1{
+    font-size: 1.7rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  .texto{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .hamburguesa{
+    display: none;
+    
+  }
+ 
+    
+    
+  }
+
 
 /***************************seccion nosotros***********************/
 
@@ -201,6 +239,32 @@ h1 {
   height: 30vh;
 }
 
+@media screen and (max-width: 980px) {
+ h3{
+  font-size: 1.2rem;
+ }
+ .nosotros .conteiner_cuadro {
+  /* Aquí puedes agregar tus reglas CSS específicas para el elemento <p> con la clase 'conteiner_cuadro' */
+  /* Por ejemplo: */
+  font-size: 0.8rem;
+padding: 1rem;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+
+
+
+}
+.conteiner_ul_li a {
+ 
+  margin: 1rem;
+  padding: 4px 8px;
+  margin-top: 0.5;
+
+ 
+ 
+    
+  }
+}
 
 
 /*************************************Servicios************************************/
@@ -235,8 +299,9 @@ font-size: 3rem;
 /**************************Imagenes**********************/*
 
 .img_casilla{
-  width: 35vh;
-  height: 30vw;
+ margin: 1rem;
+ 
+ 
 }
 /*****************************************************/*
 .casilla{
@@ -261,3 +326,25 @@ font-size: 3rem;
 h5{
   font-size:1.5rem;
 }
+@media screen and (max-width: 980px) {
+h4{
+  font-size: 1.2rem;
+}
+.enum_servicios{
+  font-size: 0.8rem;
+}
+.enum_uno a{
+  font-size: 1rem;
+  }
+  h5{
+    font-size: 0.7rem;
+  }
+  .img_casilla{
+    width: 7rem;
+    height: 7rem;
+  }
+  .texto{
+    font-size: 0.8rem;
+
+  }
+ }

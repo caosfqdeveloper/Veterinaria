@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>veterinaria 24hs</title>
 <link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-oYz22VxAm6GgZYT6F0eplUjub7XmXt3E7FyBPGhVrkt9iA+xhLs6F7b4Yf9HHTRMTphq6zCOolXYSOGKqU2mOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
  <!--zona de script-->
  <script src="https://kit.fontawesome.com/9225c87594.js" crossorigin="anonymous"></script>
 </head>
@@ -21,19 +19,18 @@
     <header>
         <!-- Barra de navegación --> 
         <nav>
-            <a href="#" target="_blank" class="link-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=1133089205" target="_blank" class="link-whatsapp">
                 <img src="/img/whatsapp.png" width="30px" alt="whatsApp">
                 <span>Veterinaria Pastor</span>
             </a> <!-- Enlace al inicio -->
+            <a href="" target="_blank" class="hamburguesa">
+                <img src="/img/Hamburguesa.png" width="20px" alt="hamburguesa"></a>
             <ul>
                 <li><a href="./index.html">Home</a></li> <!-- Enlace a la página de inicio -->
-                <li><a href="./About.html">About</a></li> <!-- Enlace a la página "Acerca de" -->
-                <li><a href="">Services</a></li> <!-- Enlace a la página de servicios -->
+                <li><a href="#about">About</a></li> <!-- Enlace a la página "Acerca de" -->
+                <li><a href="#servicios">Services</a></li> <!-- Enlace a la página de servicios -->
                 <li><a href="./contact.html">Contact</a></li> <!-- Enlace a la página de contacto -->
-                <a href="./usuario.html" target="">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </a>
-                   <!--icono de usuario-->
+                <li><a href="./pet-shop.html">pet-shop</a></li> <!-- Enlace a la página de contacto -->
             </ul>
         </nav>
     </header>
@@ -45,9 +42,10 @@
         <!-- Subtítulo -->
         <h2>Atención las 24 hs, los 365 días al año</h2>
         <!-- Imagen principal -->
-        <img src="./img/ppal.jpg" alt="imagen principal de fondo" class="imagen_principal">
+        <img src="./img/ppal.png" alt="imagen principal de fondo" class="imagen_principal">
         
     </main>
+    </section>
 
     <!-- Pie de página -->
     <footer>
@@ -58,7 +56,7 @@
     </footer>
 
     <!--************************************************Nosotros*******************************************************-->
-</section>
+<section id="about">
     <!-- Sección "Nosotros" -->
     <section class="nosotros">
         
@@ -112,7 +110,8 @@
         </div>
         <!--******************************************Servicios*******************************************************-->
         
-        <section class="servicios">
+        <section id="servicios">
+            <div class="servicios">
             <div class="enum">
 
             <h4>Nuestros Servicios</h4>
@@ -169,19 +168,22 @@
         <img src="./img/madrid.jpeg" alt=""class="img_casilla">
        
     </div>  
-    <div class="casilla_dos">
-        <img src="./img/roberto.jpeg" alt=""class="img_casilla">
-        <h5>En Veterinaria Pastor, cuidamos de tus mascotas para que vivan felices y saludables.</h5>
-      
-    </div> 
+ 
 
+</div>
 </div>
 
         </section>
 
         
-        <!--******************************************Contacto*******************************************************-->
-
+     
 </body>
+  <!-- Pie de página -->
+  <footer>
+    <!-- Información de contacto o ubicación -->
+    <div class="texto">
+        Veterinaria Pastor - Avenida Siempre Viva 742 Springfield
+    </div>
+</footer>
 </html>
 

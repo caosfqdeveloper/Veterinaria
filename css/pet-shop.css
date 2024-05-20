@@ -356,98 +356,64 @@ margin-top: 0.7rem;
 /*#######################################################################*/
 
 .mis-productos .product{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  height: 75vh;
-
-
- 
-}
-.dropdown-content:hover{
-  grid-column: 10;
-  grid-row: 2;
-}
-h3{
-  grid-column: 6/8;
-  grid-row: 1;
-  font-size: clamp(1rem, 6vw,3rem)
-}
-.a{
-  grid-column: 3;
-  grid-row: 2;
-}
-.b{
-  grid-column: 5;
-  grid-row: 2;
-}
-.c{
-  grid-column: 9;
-  grid-row: 2;
-}
-.d{
-  grid-column: 11;
-  grid-row: 2;
-}
-
-.e{
-  grid-column: 3;
-  grid-row: 4;
-}
-.f{
-  grid-column: 7;
-  grid-row: 2;
-}
-.uno{
-  grid-column: 5;
-  grid-row: 4;
-}
-.dos{
-  grid-column: 7;
-  grid-row: 4;
-}
-.tres{
-  grid-column: 9;
-  grid-row: 4;
-}
-.cuatro{
-  grid-column: 11;
-  grid-row: 4;
-}
-.cinco{
-  grid-column: 3;
-  grid-row: 6;
-}
-.seis{
-  grid-column: 5;
-  grid-row: 6;
-}
-.siete{
-  grid-column: 7;
-  grid-row: 6;
-}
-.ocho{
-  grid-column: 9;
-  grid-row: 6;
-}
-.nueve{
-  grid-column: 11;
-  grid-row: 6;
-}
-.imagen{
-  width: 100px;
-  height: 130px;
-  margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 
 }
-.mis-productos .imagen {
-  transition: transform 0.3s ease; /* Agrega una transición suave */
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.mis-productos .imagen:hover {
-  transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+.producto-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
 }
 
+.producto {
+  font-size: 24px;
+  color: #123d6b;
+  margin: 10px 0;
+}
+
+.product ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.producto ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.producto ul li:last-child {
+  border-bottom: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: white;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/*------------------------------------ footer   ------------------*/
 
 /* Estilos para el pie de página */
 .footer-pet {

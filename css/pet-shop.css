@@ -272,19 +272,19 @@ p:hover {
     margin-top: 1rem; /* Ajustar el margen superior */
   }
   .face {
-    grid-column: 12;
+    grid-column: 11;
     grid-row: 4;
     border-radius: 50%;
     margin-bottom: 2rem;
     margin-right: 1rem;
   }
   .what {
-    grid-column: 12;
+    grid-column: 11;
     grid-row: 5;
     margin-right: 1rem;
   }
   .btn_inicio {
-    grid-column: 12;
+    grid-column: 11;
     grid-row: 3;
     border-radius: 50%;
     margin-bottom: 2rem;

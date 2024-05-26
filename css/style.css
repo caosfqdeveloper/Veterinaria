@@ -71,7 +71,7 @@ nav > a {
 }
 
 /* Estilos para el contenido principal */
-main {
+.ppal {
   height: 80vh;
 }
 
@@ -246,7 +246,7 @@ h1 {
   .conteiner_ul_li a {
     margin: 1rem;
     padding: 4px 8px;
-    margin-top: 0.5;
+    margin-top: 0.5px;
   }
 }
 

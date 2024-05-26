@@ -21,7 +21,7 @@ body {
   grid-template-rows: auto 10vh;
 
   align-items: center;
-  font-size: 0, 5rem;
+  font-size: 0.5rem;
   height: 10vh;
 }
 .nav span {
@@ -123,7 +123,7 @@ span {
   grid-column: 1 / span 12; /* Ocupa 12 columnas */
   grid-row: 1 / span 12; /* Ocupa 12 filas */
   width: 100%; /* Asegura que ocupe todo el ancho disponible */
-  height: auto 80vh; /* Permite que la altura se ajuste proporcionalmente al ancho */
+  height: 80vh; /* Permite que la altura se ajuste proporcionalmente al ancho */
 }
 
 .img_ppal {
@@ -331,7 +331,7 @@ main {
 }
 
 .product {
-  background-color: width(255, 255, 255);
+ 
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
